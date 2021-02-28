@@ -1,5 +1,34 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap");
 
+$pozadina:#4b379a;
+$senka:#442852;
+$slika-senka: rgba(61,44,61,1);
+$linear: rgba(190, 94, 222);
+$linear2:rgba(50, 36, 176);
+$linearhex:#be5ede;
+$linearhex2:#3224b0;
+
+@mixin slika{
+  background-image: url("../img/sajt.png");
+  height: 400px;
+  width: 45%;
+  background-position: center;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-shadow: 0px 0px 18px 5px $slika-senka;
+-moz-box-shadow: 0px 0px 18px 5px $slika-senka;
+box-shadow: 0px 0px 18px 5px $slika-senka;
+}
+
+
 * {
   margin: 0;
   padding: 0;
@@ -18,7 +47,7 @@ li {
 }
 
 body {
-  background-color: #4b379a;
+  background-color:$pozadina;
   padding: 150px 0;
 }
 
@@ -27,13 +56,13 @@ body {
   width: 80%;
   margin: 0 auto;
   border-radius: 10px;
-  -webkit-box-shadow: 0px 0px 31px 21px #442852;
-  box-shadow: 0px 0px 31px 21px #442852;
+  -webkit-box-shadow: 0px 0px 31px 21px $senka;
+  box-shadow: 0px 0px 31px 21px $senka;
 }
 
 header {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(190, 94, 222, 0.8)), to(rgba(50, 36, 176, 0.8))), url("../img/bg.jpg");
-  background-image: linear-gradient(to bottom, rgba(190, 94, 222, 0.8) 0%, rgba(50, 36, 176, 0.8) 100%), url("../img/bg.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from($linear 0.8)), to($linear2 0.8), url("../img/bg.jpg");
+  background-image: linear-gradient(to bottom, $linear 0.8 0%, $linear2 0.8 100%), url("../img/bg.jpg");
   background-position: center;
   background-size: cover;
   padding-bottom: 150px;
@@ -106,8 +135,8 @@ header {
       padding: 7px 25px;
 
       &:hover {
-        background-image: -webkit-gradient(linear, left top, left bottom, from(#be5ede), to(#3224b0));
-        background-image: linear-gradient(to bottom, #be5ede 0%, #3224b0 100%);
+        background-image: -webkit-gradient(linear, left top, left bottom, from($linearhex), to($linearhex2));
+        background-image: linear-gradient(to bottom, $linearhex 0%, $linearhex2 100%);
       }
     }
   }
@@ -171,8 +200,8 @@ header {
 
 #project-section {
   .project {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(190, 94, 222, 0.8)), to(rgba(50, 36, 176, 0.8))), url("../img/skills-bg.jpg");
-    background-image: linear-gradient(to bottom, rgba(190, 94, 222, 0.8) 0%, rgba(50, 36, 176, 0.8) 100%), url("../img/skills-bg.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from($linear 0.8), to($linear2 0.8)), url("../img/skills-bg.jpg");
+    background-image: linear-gradient(to bottom, $linear 0.8 0%, $linear2 0.8 100%), url("../img/skills-bg.jpg");
   }
 
   .title-img {
@@ -209,37 +238,12 @@ header {
     }
 
     .slika1 {
-      background-image: url("../img/sajt.png");
-      height: 400px;
-      width: 45%;
-      background-position: center;
-      background-size: cover;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      justify-content: center;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      align-items: center;
+      @include slika;
     }
 
-    .slika2 {
-      background-image: url("../img/sajt2.png");
-      height: 400px;
-      width: 45%;
-      background-position: center;
-      background-size: cover;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      justify-content: center;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      align-items: center;
+    .slika2 { 
+     @include slika;
+     background-image: url("../img/sajt2.png");
     }
 
     .overlay-content {
@@ -251,8 +255,8 @@ header {
       transform: scaleY(0);
       -webkit-transform-origin: top;
       transform-origin: top;
-      background-image: -webkit-gradient(linear, left top, left bottom, from(#be5ede), to(#3224b0));
-      background-image: linear-gradient(to bottom, #be5ede 0%, #3224b0 100%);
+      background-image: -webkit-gradient(linear, left top, left bottom, from($linearhex), to($linearhex2));
+      background-image: linear-gradient(to bottom, $linearhex 0%, $linearhex2 100%);
     }
 
     .overlay {
@@ -270,6 +274,7 @@ header {
       -webkit-box-align: center;
       -ms-flex-align: center;
       align-items: center;
+      text-align: center;
     }
 
     .content {
@@ -299,8 +304,8 @@ header {
   }
 
   .about {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(190, 94, 222, 0.8)), to(rgba(50, 36, 176, 0.8))), url("../img/about-me.jpg");
-    background-image: linear-gradient(to bottom, rgba(190, 94, 222, 0.8) 0%, rgba(50, 36, 176, 0.8) 100%), url("../img/about-me.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from($linear 0.8), to($linear2 0.8)), url("../img/about-me.jpg");
+    background-image: linear-gradient(to bottom, $linear 0.8 0%, $linear2 0.8 100%), url("../img/about-me.jpg");
   }
 
   .container {
@@ -365,8 +370,8 @@ header {
         box-shadow: inset 0 2px 9px rgba(255, 255, 255, 0.3), inset 0 -2px 6px rgba(0, 0, 0, 0.4);
         position: relative;
         overflow: hidden;
-        background-image: -webkit-gradient(linear, left top, left bottom, from(#be5ede), to(#3224b0));
-        background-image: linear-gradient(to bottom, #be5ede 0%, #3224b0 100%);
+        background-image: -webkit-gradient(linear, left top, left bottom, from($linearhex), to($linearhex2));
+        background-image: linear-gradient(to bottom, $linearhex 0%, $linearhex2 100%);
 
         &:after {
           content: "";
@@ -393,7 +398,7 @@ header {
       h2 {
         text-transform: uppercase;
         font-size: 40px;
-        border-bottom: 2px solid #4b379a;
+        border-bottom: 2px solid $pozadina;
         letter-spacing: 2px;
       }
 
@@ -407,8 +412,8 @@ header {
 }
 
 #contact-section {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(190, 94, 222, 0.8)), to(rgba(50, 36, 176, 0.8))), url("../img/contact.jpg");
-  background-image: linear-gradient(to bottom, rgba(190, 94, 222, 0.8) 0%, rgba(50, 36, 176, 0.8) 100%), url("../img/contact.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from($linear 0.8), to($linear2 0.8)), url("../img/contact.jpg");
+  background-image: linear-gradient(to bottom, $linear 0.8 0%, $linear2 0.8 100%), url("../img/contact.jpg");
   padding: 70px;
   background-position: center;
   background-size: cover;
@@ -484,7 +489,7 @@ textarea {
 
 .button {
   display: block;
-  background-image: linear-gradient(to left, rgba(190, 94, 222, 1) 0%, rgba(50, 36, 176, 1) 100%), url("../img/contact.jpg");
+  background-image: linear-gradient(to left, $linear 1 0%, $linear2 1 100%), url("../img/contact.jpg");
   padding: 10px 0;
   color: white;
   text-transform: uppercase;
@@ -496,7 +501,7 @@ textarea {
   max-width: 700px;
 
   &:hover {
-    background-image: linear-gradient(to right, rgba(190, 94, 222, 1) 0%, rgba(50, 36, 176, 1) 100%), url("../img/contact.jpg");
+    background-image: linear-gradient(to right, $linear 1 0%, $linear2 1 100%), url("../img/contact.jpg");
   }
 }
 
@@ -682,6 +687,13 @@ footer {
       width: 60%;
     }
   }
+  #project-section{
+    .project-content{
+      .content{
+        width: 95%;
+      }
+    }
+  }
   #contact-section{
     padding: 70px 0;
     form{
@@ -762,6 +774,12 @@ footer {
         font-size: 30px;
       }
     }
+    .project-content{
+      .content{
+        width: 100%;
+        height: 280px;
+      }
+    }
   }
   #about-section{
     .title-img {
@@ -801,8 +819,8 @@ footer {
   #project-section{
     .project-content{
       .content{
-        width: 90%;
-        height: 300px;
+        width: 99%;
+        height: 200px;
       }
     }
   }
