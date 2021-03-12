@@ -61,8 +61,8 @@ body {
 }
 
 header {
-  background-image: -webkit-gradient(linear, left top, left bottom, from($linear 0.8)), to($linear2 0.8), url("../img/bg.jpg");
-  background-image: linear-gradient(to bottom, $linear 0.8 0%, $linear2 0.8 100%), url("../img/bg.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from($linear 0.8)), to($linear2 0.8), url("../img/bg-min.jpg");
+  background-image: linear-gradient(to bottom, $linear 0.8 0%, $linear2 0.8 100%), url("../img/bg-min.jpg");
   background-position: center;
   background-size: cover;
   padding-bottom: 150px;
@@ -200,8 +200,8 @@ header {
 
 #project-section {
   .project {
-    background-image: -webkit-gradient(linear, left top, left bottom, from($linear 0.8), to($linear2 0.8)), url("../img/skills-bg.jpg");
-    background-image: linear-gradient(to bottom, $linear 0.8 0%, $linear2 0.8 100%), url("../img/skills-bg.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from($linear 0.8), to($linear2 0.8)), url("../img/skills-bg-min.jpg");
+    background-image: linear-gradient(to bottom, $linear 0.8 0%, $linear2 0.8 100%), url("../img/skills-bg-min.jpg");
   }
 
   .title-img {
@@ -412,8 +412,8 @@ header {
 }
 
 #contact-section {
-  background-image: -webkit-gradient(linear, left top, left bottom, from($linear 0.8), to($linear2 0.8)), url("../img/contact.jpg");
-  background-image: linear-gradient(to bottom, $linear 0.8 0%, $linear2 0.8 100%), url("../img/contact.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from($linear 0.8), to($linear2 0.8)), url("../img/contact-min.jpg");
+  background-image: linear-gradient(to bottom, $linear 0.8 0%, $linear2 0.8 100%), url("../img/contact-min.jpg");
   padding: 70px;
   background-position: center;
   background-size: cover;
