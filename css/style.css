@@ -31,8 +31,8 @@ body {
 }
 
 header {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(190, 94, 222, 0.8)), to(rgba(50, 36, 176, 0.8))), url("../img/bg.jpg");
-  background-image: linear-gradient(to bottom, rgba(190, 94, 222, 0.8) 0%, rgba(50, 36, 176, 0.8) 100%), url("../img/bg.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(190, 94, 222, 0.8)), to(rgba(50, 36, 176, 0.8))), url("../img/bg-min.jpg");
+  background-image: linear-gradient(to bottom, rgba(190, 94, 222, 0.8) 0%, rgba(50, 36, 176, 0.8) 100%), url("../img/bg-min.jpg");
   background-position: center;
   background-size: cover;
   padding-bottom: 150px;
@@ -169,8 +169,8 @@ header .header-txt a:hover {
 }
 
 #project-section .project {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(190, 94, 222, 0.8)), to(rgba(50, 36, 176, 0.8))), url("../img/skills-bg.jpg");
-  background-image: linear-gradient(to bottom, rgba(190, 94, 222, 0.8) 0%, rgba(50, 36, 176, 0.8) 100%), url("../img/skills-bg.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(190, 94, 222, 0.8)), to(rgba(50, 36, 176, 0.8))), url("../img/skills-bg-min.jpg");
+  background-image: linear-gradient(to bottom, rgba(190, 94, 222, 0.8) 0%, rgba(50, 36, 176, 0.8) 100%), url("../img/skills-bg-min.jpg");
 }
 
 #project-section .title-img {
@@ -404,8 +404,8 @@ header .header-txt a:hover {
 }
 
 #contact-section {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(190, 94, 222, 0.8)), to(rgba(50, 36, 176, 0.8))), url("../img/contact.jpg");
-  background-image: linear-gradient(to bottom, rgba(190, 94, 222, 0.8) 0%, rgba(50, 36, 176, 0.8) 100%), url("../img/contact.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(190, 94, 222, 0.8)), to(rgba(50, 36, 176, 0.8))), url("../img/contact-min.jpg");
+  background-image: linear-gradient(to bottom, rgba(190, 94, 222, 0.8) 0%, rgba(50, 36, 176, 0.8) 100%), url("../img/contact-min.jpg");
   padding: 70px;
   background-position: center;
   background-size: cover;
@@ -495,8 +495,8 @@ textarea {
 
 .button {
   display: block;
-  background-image: -webkit-gradient(linear, right top, left top, from(#be5ede), to(#3224b0)), url("../img/contact.jpg");
-  background-image: linear-gradient(to left, #be5ede 0%, #3224b0 100%), url("../img/contact.jpg");
+  background-image: -webkit-gradient(linear, right top, left top, from(#be5ede), to(#3224b0));
+  background-image: linear-gradient(to left, #be5ede 0%, #3224b0 100%);
   padding: 10px 0;
   color: white;
   text-transform: uppercase;
@@ -509,8 +509,8 @@ textarea {
 }
 
 .button:hover {
-  background-image: -webkit-gradient(linear, left top, right top, from(#be5ede), to(#3224b0)), url("../img/contact.jpg");
-  background-image: linear-gradient(to right, #be5ede 0%, #3224b0 100%), url("../img/contact.jpg");
+  background-image: -webkit-gradient(linear, left top, right top, from(#be5ede), to(#3224b0));
+  background-image: linear-gradient(to right, #be5ede 0%, #3224b0 100%);
 }
 
 .upp {
